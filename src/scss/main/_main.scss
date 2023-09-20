@@ -1,0 +1,48 @@
+@use "base/variables" as v;
+@use "base/mixins" as m;
+
+.main{
+
+
+    &__grid{
+        background-color: v.$blanco;
+        border-radius: .5rem;
+        padding: 1rem;
+        margin-top: 5rem;
+    }
+
+    .servicios{ 
+        
+        @include m.tablet { 
+            @include m.grid(3, 5rem);
+        }
+
+        .servicio{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            h3{
+                color: v.$secundario;
+            }
+
+            .icono{
+                background-color: v.$primario;
+                height: 15rem;
+                width: 15rem;
+                border-radius: 50%;
+                
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            p{
+                text-align: center;
+                line-height: 1.5;
+            }
+        }
+
+        }
+}

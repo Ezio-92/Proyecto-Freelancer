@@ -12,12 +12,12 @@ function css(done){
 
     src("src/scss/app.scss")
         .pipe(sass())
-        .pipe(dest("build/css"))
+        .pipe(dest("build/css"));
 
     done()
 }
 
-function imagenes(){
+function imagenes(done){
     return src("src/img/**/*")
         .pipe(imagemin({optimizationLevel: 3}))
         .pipe(dest("build/img"))
@@ -26,7 +26,7 @@ function imagenes(){
 }
 
 function dev(){
-    watch("src/scss/app.scss", css);
+    watch("src/scss/**/*.scss", css);
     watch("src/img/**/*", imagenes);
 
 }

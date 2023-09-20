@@ -318,6 +318,8 @@ html {
 
 body {
   font-size: 1.6rem;
+  font-family: "Rubik", sans-serif;
+  background-image: linear-gradient(to top, #DFE9F3 0%, #ffffff 100%);
 }
 
 h1 {
@@ -348,5 +350,187 @@ a {
 [class$=__contenedor] {
   max-width: 120rem;
   margin: 0 auto;
+}
+
+.header {
+  text-align: center;
+}
+.header__contenido {
+  background-color: #0097A7;
+}
+
+.navegacion {
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width: 768px) {
+  .navegacion {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+.navegacion__link {
+  display: block;
+  text-align: center;
+  padding: 1rem;
+  color: #ffffff;
+  font-size: 2rem;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.navegacion__link:hover {
+  background-color: #FFC107;
+}
+
+.hero {
+  background-image: url(../img/hero.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: 45rem;
+  padding: 1rem;
+  position: relative;
+}
+.hero::before {
+  content: "";
+  position: absolute;
+  background-color: #212121;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  opacity: 0.6;
+}
+.hero__contenido {
+  position: relative;
+  text-align: center;
+  color: #ffffff;
+  margin-top: 10rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.hero__contenido p {
+  font-size: 2rem;
+}
+.hero__contenido .ubicacion {
+  display: flex;
+  justify-content: center;
+}
+.hero .boton1 {
+  background-color: #0097A7;
+  color: #ffffff;
+  padding: 1.5rem 3rem;
+  border-radius: 0.5rem;
+  font-size: 2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-top: 6rem;
   width: 95%;
+}
+@media (min-width: 768px) {
+  .hero .boton1 {
+    width: auto;
+  }
+}
+
+.main__grid {
+  background-color: #ffffff;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  margin-top: 5rem;
+}
+@media (min-width: 768px) {
+  .main .servicios {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5rem;
+  }
+}
+.main .servicios .servicio {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.main .servicios .servicio h3 {
+  color: #0097A7;
+}
+.main .servicios .servicio .icono {
+  background-color: #FFC107;
+  height: 15rem;
+  width: 15rem;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main .servicios .servicio p {
+  text-align: center;
+  line-height: 1.5;
+}
+
+.main .form {
+  background-color: #757575;
+  width: min(60rem, 100%);
+  margin: 0 auto;
+  padding: 2rem 4rem;
+  margin-top: 5rem;
+  border-radius: 0.5rem;
+}
+.main .form fieldset {
+  border: none;
+}
+.main .form legend {
+  color: #FFC107;
+  margin: 0 auto;
+  font-size: 2.5rem;
+  margin-bottom: 2.5rem;
+}
+.main .form .campos {
+  margin-bottom: 3rem;
+}
+.main .form .campo label {
+  display: block;
+  color: #ffffff;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+.main .form .campo .input-text {
+  width: 100%;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  margin-bottom: 1rem;
+}
+.main .form .campo .input-text__2 {
+  height: 20rem;
+}
+.main .form .flex {
+  display: flex;
+}
+.main .form .alinear-derecha {
+  justify-content: flex-end;
+}
+.main .form .boton2 {
+  background-color: #0097A7;
+  color: #ffffff;
+  padding: 2rem 4rem;
+  border-radius: 0.5rem;
+  text-transform: uppercase;
+  font-size: 2rem;
+  font-weight: bold;
+  width: 100%;
+  text-align: center;
+}
+@media (min-width: 768px) {
+  .main .form .boton2 {
+    width: auto;
+  }
+}
+
+.footer {
+  text-align: center;
+  padding: 1rem 3rem;
+  font-size: 2rem;
 }

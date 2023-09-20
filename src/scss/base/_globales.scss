@@ -1,3 +1,5 @@
+@use"variables" as v;
+
 html{
     font-size: 62.5%;
     box-sizing: border-box;
@@ -9,6 +11,8 @@ html{
 
 body{
     font-size: 1.6rem;
+    font-family: v.$fuentePrincipal;
+    background-image: linear-gradient(to top, v.$grisClaro 0%, v.$blanco 100% );
 }
 
 h1{
@@ -39,5 +43,4 @@ a{
 [class$= "__contenedor"]{
     max-width: 120rem;
     margin: 0 auto;
-    width: 95%;
 }

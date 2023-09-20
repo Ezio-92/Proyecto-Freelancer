@@ -1,0 +1,61 @@
+@use "base/variables" as v;
+@use "base/mixins" as m;
+
+.hero{
+    background-image: url(../img/hero.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 45rem;
+    padding: 1rem;
+    position: relative;
+
+    &::before{
+        content: "";
+        position: absolute;
+        background-color: v.$oscuro;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        opacity: .6;
+    }
+
+    &__contenido{
+        position: relative;
+        text-align: center;
+        color: v.$blanco;
+        margin-top: 10rem;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        p{
+            font-size: 2rem;
+        }
+
+        .ubicacion{
+            display: flex;
+            justify-content: center;
+            
+        }
+    }
+
+    .boton1{
+        background-color: v.$secundario;
+        color: v.$blanco;
+        padding: 1.5rem 3rem;
+        border-radius: .5rem;
+        font-size: 2rem;
+        font-weight: bold;
+        text-transform: uppercase;
+        margin-top: 6rem;
+        width: 95%;
+
+        @include m.tablet { 
+            width: auto;
+        }
+   }
+}

@@ -3,9 +3,128 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Desarrollador Freelancer</title>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="build/css/app.css">
 </head>
 <body>
-    
+    <header class="header">
+        <h1>Desarrollador Freelancer</h1>
+
+        <div class="header__contenido">
+            <div class="header__contenedor">
+                <nav class="navegacion">
+                    <a class="navegacion__link" href="#">Inicio</a>
+                    <a class="navegacion__link" href="#">Linkedin</a>
+                    <a class="navegacion__link" href="#">Skills</a>
+                    <a class="navegacion__link" href="#">Biografia</a>
+                    <a class="navegacion__link" href="#">Contacto</a>
+                </nav>
+            </div>
+        </div>
+    </header>    
+
+    <section class="hero">
+        <div class="hero__contenido">
+            <h1>Freelancer EC</h1>
+
+            <div  class="ubicacion">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-map-pin" width="60" height="60" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffbf00" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <path d="M9 11a3 3 0 1 0 6 0a3 3 0 0 0 -6 0" />
+                    <path d="M17.657 16.657l-4.243 4.243a2 2 0 0 1 -2.827 0l-4.244 -4.243a8 8 0 1 1 11.314 0z" />
+                  </svg>
+
+                <p>Zona Oeste, Buenos Aires</p>
+            </div>
+
+            <a class="boton1" href="#">Ingresar</a>
+        </div>
+    </section>
+
+    <main class="main">
+        <div class="main__contenedor">
+            <div class="main__grid">
+                <h1>Mis Servicios</h1>
+                <div class="servicios">
+                    <div class="servicio">
+                        <h3>Fire</h3>
+                        <div class="icono">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-flame" width="56" height="56" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                <path d="M12 12c2 -2.96 0 -7 -1 -8c0 3.038 -1.773 4.741 -3 6c-1.226 1.26 -2 3.24 -2 5a6 6 0 1 0 12 0c0 -1.532 -1.056 -3.94 -2 -5c-1.786 3 -2.791 3 -4 2z" />
+                            </svg>
+                        </div>
+
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus deleniti, voluptates quasi, distinctio magni quae et soluta, a earum atque aut accusamus iusto laboriosam dignissimos? Magni odio eveniet exercitationem reprehenderit?</p>
+                    </div>
+
+                    <div class="servicio">
+                        <h3>Water</h3>
+                        <div class="icono">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-ripple" width="56" height="56" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                <path d="M3 7c3 -2 6 -2 9 0s6 2 9 0" />
+                                <path d="M3 17c3 -2 6 -2 9 0s6 2 9 0" />
+                                <path d="M3 12c3 -2 6 -2 9 0s6 2 9 0" />
+                            </svg>
+                        </div>
+
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus deleniti, voluptates quasi, distinctio magni quae et soluta, a earum atque aut accusamus iusto laboriosam dignissimos? Magni odio eveniet exercitationem reprehenderit?</p>
+                    </div>
+
+                    <div class="servicio">
+                        <h3>Magic</h3>
+                        <div class="icono">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-bolt" width="56" height="56" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                <polyline points="13 3 13 10 19 10 11 21 11 14 5 14 13 3" />
+                            </svg>
+                        </div>
+
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus deleniti, voluptates quasi, distinctio magni quae et soluta, a earum atque aut accusamus iusto laboriosam dignissimos? Magni odio eveniet exercitationem reprehenderit?</p>
+                    </div>
+                </div>
+
+                <section class="form">
+                    <form>
+                        <legend>Completa tus Datos</legend>
+
+                        <fieldset>
+                            <div class="campos">
+                                <div class="campo">
+                                    <label>Nombre</label>
+                                    <input class="input-text" type="text" placeholder="Mi Nombre">
+                                </div>
+
+                                <div class="campo">
+                                    <label>Telefono</label>
+                                    <input class="input-text" type="tel" placeholder="Mi Telefono">
+                                </div>
+
+                                <div class="campo">
+                                    <label>Email</label>
+                                    <input class="input-text" type="email" placeholder="Mi Email">
+                                </div>
+
+                                <div class="campo">
+                                    <label>Mensaje</label>
+                                    <textarea class="input-text input-text__2"></textarea>
+                                </div>
+                            </div> <!--Contenedor de campos-->
+                            <div class="flex alinear-derecha">
+                                <a href="#" class="boton2">Enviar</a>
+                            </div>
+                        </fieldset>
+                    </form>
+                 </section>
+            </div>
+        </div>
+        
+    </main>
+
+    <footer class="footer">
+        <p>Todos los derechos reservados para el Autor</p>
+    </footer>
 </body>
 </html>
